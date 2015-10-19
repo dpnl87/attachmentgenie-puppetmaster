@@ -46,5 +46,4 @@ class puppetmaster::profile_foreman (
     password    => $foreman_admin_password,
   }
   create_resources(::foreman::plugin, $plugins)
-  create_resources(::foreman::compute, $compute)
 }
